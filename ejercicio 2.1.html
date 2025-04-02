@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2.2</title>
+    
+    <style>
+        table{
+            background-color: rgb(251, 255, 0);
+            border-color: green;
+        }
+
+    </style>
+        
+</head>
+<body>
+    <H1>Tabla</H1>
+    <table border="5" class="border" width="100%">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Lane</th>
+                <th>% Odiabilidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ashe</td>
+                <td>Bot</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td>Yi</td>
+                <td>Jungla</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>Mel</td>
+                <td>Bot</td>
+                <td>500%</td>
+            </tr>
+        </tbody>
+    </table>
+
+<h1>Formulario</h1>
+    <form id="formulario" action="/recepcion/de/datos.php" method="get">
+        <label>
+            Nombre:
+            <br/>
+            <input type="text" name="txtNombre" required minlength="3" maxlength="15" />
+        </label>
+        <br />
+        <label>
+            Correo electronico:
+            <br/>
+            <input type="text" name="txtCorreo" required min="1" max="120" step=".25" />
+        </label>
+        <br />
+        <label>
+            Contraseña:
+            <br/>
+            <input type="text" name="txtContraseña" required min="8" max="5000" />
+        </label>
+        <br />
+        <label>
+            Ciudad Residencia:
+            <select name="slCiudad" required >
+                <option value="">Seleccione</option>
+                <option value="Iquique">
+                    Iquique
+                </option>
+                <option value="Antofagasta">
+                    Antofagasta
+                </option>
+                <option value="Copiapo">
+                    Copiapo
+                </option>
+                <option value="La serena">
+                    La Serena
+                </option>
+            </select>
+        </label>
+        <br />
+        <Label>Estacion preferida:</Label>
+        <br/>
+        <label>
+           Invierno
+            <input type="radio" name="rbEstacion" value="In" required />
+        </label>
+        <label>
+            Primavera
+            <input type="radio" name="rbEstacion" value="Pr"  />
+        </label>
+        <label>
+            Verano
+            <input type="radio" name="rbEstacion" value="Ve"  />
+        </label>
+        <label>
+            Otoño
+            <input type="radio" name="rbEstacion" value="Ra"  />
+        </label>
+        <br/>
+        <label>Frutas Favoritas</label>
+        <br/>
+        <label>
+            <select name="slFruta" required >
+                <option value="">Seleccione</option>
+                <option value="Manzana">
+                    Manzana
+                </option>
+                <option value="Naranja">
+                    Naranja
+                </option>
+                <option value="Pera">
+                    Pera
+                </option>
+                <option value="Tomate">
+                    Tomate
+                </option>
+            </select>
+        </label>
+        <br />
+        <button name="btnEnviar" type="submit"> Enviar</button>
+        <br/>
+    </form>
+
+</body>
+</html>
