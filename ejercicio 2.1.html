@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 2.2</title>
     
+    <strong>
+        
+
+    </strong>
+
     <style>
         table{
             background-color: rgb(251, 255, 0);
             border-color: green;
         }
-
+        form{
+            background-color: rgb(112, 216, 103);
+            border-color: black;
+        }
     </style>
         
 </head>
@@ -44,7 +52,7 @@
     </table>
 
 <h1>Formulario</h1>
-    <form id="formulario" action="/recepcion/de/datos.php" method="get">
+    <form id="formulario" action="/recepcion/de/datos.php" method="get" border="2">
         <label>
             Nombre:
             <br/>
@@ -120,6 +128,7 @@
                 </option>
             </select>
         </label>
+        <br/>
         <br />
         <button name="btnEnviar" type="submit"> Enviar</button>
         <br/>
